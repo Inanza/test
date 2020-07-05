@@ -1,0 +1,128 @@
+.container{
+	position: relative;
+}
+.header{
+	padding: 20px;
+	position: relative;
+}
+.header .judul{
+	width: 1313px;
+	height: 70px;
+	position: relative;
+	font: 60px dear sunshine;
+	color: white;
+	font-weight: bold;
+	background-color: salmon;
+	text-align: center;
+}
+#menu .media{
+	padding-bottom: 20px;
+}
+#menu .media-object img{
+	width: 220px;
+	padding-right: 12px;
+	position: relative;
+}
+#menu .media-object span.menu-price{
+	position: absolute;
+	background-color: light blue;
+	color: #c2451;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 6px 20px;
+	top: 50%;
+	left: 3%;
+}
+h1,h2,h3, .btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+h1 {
+  font-weight: bold;
+  font-size: 100px;
+}
+
+h2 {
+  color: #333;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+#contact h2 {
+  color: #ffffff;
+}
+
+h3 {
+  color: #444;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+#menu h3 {
+   color: #555;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+p {
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 28px;
+}
+a {
+  text-decoration: none !important;
+}
+a:visited,
+a:focus {
+  outline: none;
+  text-decoration: none !important;
+}
+
+.parallax-section {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+.hvr-bounce-to-bottom:before,
+.hvr-bounce-to-top:before {
+  background-color: #ffffff;
+}
+#about,
+#feature,
+#video,
+#menu,
+#team,
+#gallery,
+#contact {
+  color: #656565;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#feature,
+#video,
+#team,
+#gallery,
+#contact {
+  text-align: center;
+}
+
+#feature,
+#team {
+  background: rgb(240,240,240);
+}
+.section-title {
+  padding-bottom: 70px;
+}
+#about .section-title,
+#menu .section-title {
+  text-align: center;
+}

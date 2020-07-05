@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="categories_style.css">
+</head>
+<body>
+	<section id="categories" class="parallax-section">
+		<div class="row">
+		
+			<div class="col-md-12">
+			
+			<div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+				<div class="wow fadeInUp section-title" data-wow-delay="0.3s">
+					<h2>CATEGORIES</h2>
+				</div>
+			</div>
+			
+				<!-- iso section -->
+				<div class="iso-section wow fadeInUp" data-wow-delay="0.6s">
+				
+					<ul class="filter-wrapper clearfix">
+						<li><a href="all.html" data-filter="*" class="selected opc-main-bg">All</a></li>
+						<li><a href="hoodie.html" class="opc-main-bg" data-filter=".hoodie">Hoodie</a></li>
+						<li><a href="pants.html" calss="opc-main-bg" data-filter=".pants">Pants</a></li>
+						<li><a href="buckethat.html" class="opc-main-bg" data-filter=".buckethat">Bucket Hat</a></li>
+						<li><a href="tshirt.html" class="opc-main-bg" data-filter=".tshirt">T-Shirt</a></li>
+					</ul>
+					
+					<ul id="slides">
+						<li class="slide showing"</li>
+						<li class="slide"></li>
+						<li class="slide"></li>
+						<li class="slide"></li>
+						<li class="slide"></li>
+					</ul>
+	<script type="text/javascript">
+		var slides = document.querySelectorAll('#slides .slide');
+		var currentSlide = 0;
+		var slideInterval = setInterval(nextSlide,2000);
+		
+		function nextSlide(){
+			slides[currentSlide].className = 'slide';
+			currentSlide = (currentSlide+1)%slides.length;
+			slides[currentSlide].className = 'slide showing';
+		}
+	</script>
+</body>
+</html>

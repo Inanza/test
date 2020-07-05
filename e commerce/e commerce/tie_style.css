@@ -1,0 +1,198 @@
+.body{
+	font:16px/28px arial, sans-serif;
+}
+.container{
+	position: relative;
+}
+.search{
+	font: 18px times new roman;
+	padding-left:1100px;
+	font-weight; bold;
+	color: salmon;
+	position: relatitve;
+}
+.header{
+	padding: 10px;
+	position: relative;
+}
+.header .judul{
+	width: 1313px;
+	height: 70px;
+	position: relative;
+	font: 60px cream peach;
+	color: white;
+	font-weight: bold;
+	background-color: salmon;
+	text-align: center;
+}
+.shirt{
+	position: relative;
+	width: 1313px;
+	height: 350px;
+	background-image: url(img/background.jpg);
+	background-size: cover;
+	background-repeat: none;
+	background-position: 0-950px;
+	border-bottom: 8px solid pink;
+}
+.choice{
+	width: 250px;
+	background-color: white;
+	height: 200px;
+	box-sizing: border-box;
+	float: left;
+}
+.choice dl dt{
+	margin-top: 20px;
+}
+.choice a{
+	font-weight: bold;
+	text-decoration: none;
+	color: salmon;
+	padding: 10px;
+}
+.header .choice a:hover{
+	color: orange;
+}
+.categories {
+    position: relative;
+    width: 220px;
+    height: 50px;
+    background-color: salmon;
+    border-top-right-radius: 150px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 150px;
+	border-bottom-left-radius: 150px;
+    text-align: center;
+    line-height: 70px;
+    font-weight: bold;
+    color: white;
+    padding-top:20px;
+    font: 27px castellar;
+}
+.menu {
+       position: relative;
+       padding-top: 5px;
+       width: 240px;
+       height: 348px;
+       border-top-right-radius: 60px;
+       border-bottom-right-radius: 60px;
+       text-align: left;
+       line-height: 20px;
+       background-image: url(img/bg8.jpg);
+       background-position: 0-450px;
+}
+.menu a {
+       font-weight: bold;
+       text-decoration: none;
+       color: salmon;
+}
+.last {
+       width: 210px;
+       padding: 15px;
+       background-color: white;
+       border-top: 10px solid white;
+}
+.last1 {
+       font: 17px arial;
+       color: salmon;
+       text-align: center;
+}
+.content{
+	width: 1000px;
+	height: 200px;
+	background-color: white;
+	box-sizing: border-box;
+	float: left;
+}
+.content .isi1{
+	margin-top: 20px;
+	height: 200px;
+	background-size: cover;
+	background-position: 0-200px;
+	background-image: url(img/bg11.png);
+}
+.satu{
+	width: 940px;
+	height: 100px;
+	background-color: white;
+	margin-left: 60px;
+	margin-top: -80px;
+}
+.satu a{
+	font: 40px Bell MT;
+	color: salmon;
+}
+.dua{
+	background-color: white;
+	font: 20px Bell MT;
+	color: #5d5d5e;
+}
+.two{
+	background-color: white;
+	font: 20px Bell MT;
+	color: salmon;
+}
+.tiga{
+	background-color: white;
+	font: 25px Bell MT;
+	color: #5d5d5e;
+	padding-left: 70px;
+}
+.empat{
+	background-color: white;
+	font: 17px Bell MT;
+	color: #5d5d5e;
+	padding-left: 70px;
+	padding-right: 60px;
+}
+h1{
+	text-align: center;
+	/*ketebalan font*/
+	font: 65px blood thirst;
+	color: salmon;
+	
+}
+ 
+.tulisan_login{
+	text-align: center;
+	/*membuat semua huruf menjadi kapital*/
+	text-transform: uppercase;
+}
+ 
+.kotak_login{
+	width: 350px;
+	background: white;
+	/*meletakkan form ke tengah*/
+	margin: 80px auto;
+	padding: 30px 20px;
+}
+ 
+label{
+	font-size: 11pt;
+}
+ 
+.form_login{
+	/*membuat lebar form penuh*/
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+}
+ 
+.tombol_login{
+	background: #46de4b;
+	color: white;
+	font-size: 11pt;
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 20px;
+}
+ 
+.link{
+	color: #232323;
+	text-decoration: none;
+	font-size: 10pt;
+}

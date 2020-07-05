@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <style>
+	body {
+       background: -webkit-linear-gradient(bottom, #FFFFFF, #8485FF);
+       background-repeat: no-repeat;
+	}
+	#card {
+        background: #fbfbfb;
+        border-radius: 8px;
+        box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+        height: 410px;
+        margin: 6rem auto 8.1rem auto;
+        width: 329px;
+	}
+	#card-content {
+      padding: 12px 44px;
+	}
+	#card-title {
+      font-family: "Raleway Thin", sans-serif;
+      letter-spacing: 4px;
+      padding-bottom: 23px;
+      padding-top: 13px;
+      text-align: center;
+	}
+	.underline-title {
+      background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+      height: 2px;
+      margin: -1.1rem auto 0 auto;
+      width: 89px;
+	}
+	a {
+		text-decoration: none;
+	}
+	label {
+		font-family: "Raleway", sans-serif;
+		font-size: 11pt;
+	}
+	#forgot-pass {
+		color: #2dbd6e;
+		font-family: "Raleway", sans-serif;
+		font-size: 10pt;
+		margin-top: 3px;
+		text-align: right;
+	}
+	.form {
+		align-items: left;
+		display: flex;
+		flex-direction: column;
+	}
+	.form-border {
+		background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+		height: 1px;
+		width: 100%;
+	}
+	.form-content {
+		background: #fbfbfb;
+		border: none;
+		outline: none;
+		padding-top: 14px;
+	}
+	#signup {
+		color: #2dbd6e;
+		font-family: "Raleway", sans-serif;
+		font-size: 10pt;
+		margin-top: 16px;
+		text-align: center;
+	}
+	#submit-btn {
+		background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
+		border: none;
+		border-radius: 21px;
+		box-shadow: 0px 1px 8px #24c64f;
+		cursor: pointer;
+		color: white;
+		font-family: "Raleway SemiBold", sans-serif;
+		height: 42.3px;
+		margin: 0 auto;
+		margin-top: 50px;
+		transition: 0.25s;
+		width: 153px;
+	}
+	#submit-btn:hover {
+		box-shadow: 0px 1px 18px #24c64f;
+	}
+	.header{
+		padding: 10px;
+		position: relative;
+	}
+	.header .judul{
+		width: 1313px;
+		height: 70px;
+		position: relative;
+		font: 60px blood thirst;
+		color: rose;
+		font-weight: bold;
+		text-align: center;
+	}
+	.text-gradient {
+		font-family: masha;
+		text-align: center;
+		font-size: 55px;
+		background: linear-gradient(to right, #ffffff 20%, #FF3C48 40%, #2373FF 80%, #ffffff 60%);
+		background-size: 200% auto;
+		color: #000;
+		background-clip: text;
+		text-fill-color: transparent;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: animate 1s linear infinite;
+	}
+	@keyframes animate {
+		to {
+		background-position: 200% center;
+		}
+	}
+	.shirt{
+		position: relative;
+		width: 1313px;
+		height: 350px;
+		background-image: url(img/background.jpg);
+		background-size: cover;
+		background-repeat: none;
+		background-position: 0-950px;
+		border-bottom: 8px solid pink;
+	}
+	.choice{
+		width: 250px;
+		background-color: white;
+		height: 200px;
+		box-sizing: border-box;
+		float: left;
+	}
+	.choice dl dt{
+		margin-top: 20px;
+	}
+	.choice a{
+		font-weight: bold;
+		text-decoration: none;
+		color: salmon;
+		padding: 10px;
+	}
+	.header .choice a:hover{
+		color: orange;
+	}
+	.categories {
+		position: relative;
+		width: 220px;
+		height: 50px;
+		background-color: salmon;
+		border-top-right-radius: 150px;
+		border-top-left-radius: 0px;
+		border-bottom-right-radius: 150px;
+		border-bottom-left-radius: 150px;
+		text-align: center;
+		line-height: 70px;
+		font-weight: bold;
+		color: white;
+		padding-top:20px;
+		font: 27px castellar;
+	}
+	.menu {
+		position: relative;
+		padding-top: 5px;
+		width: 240px;
+		height: 348px;
+		border-top-right-radius: 60px;
+		border-bottom-right-radius: 60px;
+		text-align: left;
+		line-height: 20px;
+		background-image: url(img/bg8.jpg);
+		background-position: 0-450px;
+	}
+	.menu a {
+       font-weight: bold;
+       text-decoration: none;
+       color: salmon;
+	}
+	.last {
+       width: 210px;
+       padding: 15px;
+       background-color: white;
+       border-top: 10px solid white;
+	}
+	.last1 {
+       font: 17px cream peach;
+       color: salmon;
+       text-align: center;
+	}
+	.content{
+       width: 1000px;
+       height: 150px;
+       background-color: white;
+       box-sizing: border-box;
+       float: left;
+}
+.content .isi1{
+       margin-top:20px;
+       height: 200px;
+       background-size: cover;
+       background-position: 0-200px;
+       background-image: url(img/bg11.png);
+}
+.satu {
+       width: 940px;
+       height: 100px;
+       background-color: white;
+       margin-left: 60px;
+       margin-top: -80px;
+}
+.satu a {
+       font: 40px just tell me what;
+       color:salmon;
+}
+.dua {
+       background-color: white;
+       font: 20px just tell me what;
+       color:#5d5d5e;
+}
+.two {
+       background-color: white;
+       font: 20px just tell me what;
+       color:salmon;
+}
+.tiga {
+       background-color: white;
+       font: 25px just tell me what;
+       color:#5d5d5e;
+       padding-left: 70px;
+}
+	.empat {
+       background-color: white;
+       font: 17px just tell me what;
+       color:#5d5d5e;
+       padding-left: 70px;
+       padding-right: 60px;
+}
+	.malasngoding-slider { 
+		border: 10px solid #FFFFFF; 
+		position: relative; 
+		overflow: hidden; 
+		background: #FFFFFF;
+	}
+ 
+	.malasngoding-slider { 
+		margin:20px auto;
+		width: 768px;
+		height: 450px; 
+	}
+ 
+	.isi-slider img { 
+		width: 768px;
+		height: 450px; 
+		float: left;
+	}
+ 
+	.isi-slider { 
+		position: absolute; 
+		width:3900px;  
+ 
+	/*pengaturan durasi lama tampil gambar bisa di atur di bawah ini*/
+		animation-name:slider;
+		animation-duration:16s;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count:infinite;
+		-webkit-animation-name:slider;
+		-webkit-animation-duration:16s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-iteration-count:infinite;
+		-moz-animation-name:slider;
+		-moz-animation-duration:16s;
+		-moz-animation-timing-function: ease-in-out;
+		-moz-animation-iteration-count:infinite;
+		-o-animation-name:slider;
+		-o-animation-duration:16s;
+		-o-animation-timing-function: ease-in-out;
+		-o-animation-iteration-count:infinite;
+	}
+ 
+ 
+	/*saat gambar di hover oleh cursor mouse maka berhenti slide*/
+	.isi-slider:hover { 
+		-webkit-animation-play-state:paused; 
+		-moz-animation-play-state:paused; 
+		-o-animation-play-state:paused; 
+		animation-play-state:paused; }
+	}
+ 
+	.isi-slider img { 
+		float: right; 
+	}
+ 
+	.malasngoding-slider:after { 
+		font-size: 150px; 
+		position: absolute; 
+		z-index: 12; 
+		color: rgba(255,255,255, 0); 
+		left: 300px; top: 80px; 
+		-webkit-transition: 1s all ease-in-out; 
+		-moz-transition: 1s all ease-in-out; 
+		transition: 1s all ease-in-out; 
+	}
+ 
+	.malasngoding-slider:hover:after { 
+		color: rgba(255,255,255, 0.6);  
+	}
+ 
+ 
+ 
+	@-moz-keyframes slider {     
+		0% {
+		left: 0; opacity: 0; 
+	}     
+		2% {
+		opacity: 1; 
+	}     
+		20% {
+		left: 0; opacity: 1; 
+	}     
+		21% {
+		opacity: 0; 
+	}     
+		24% {
+		opacity: 0; 
+	}     
+		25% {
+		left: -768px; opacity: 1; 
+	}       
+		45% {
+		left: -768px; opacity: 1; 
+	}     
+		46% {
+		opacity: 0; 
+	}     
+		48% {
+		opacity: 0; 
+	}     
+		50% {
+		left: -1536px; opacity: 1; 
+	}     
+		70% {
+		left: -1536px; opacity: 1; 
+	}     
+		72% {
+		opacity: 0; 
+	}     
+		74% {
+		opacity: 0; 
+	}    
+		75% {
+		left: -2304px; opacity: 1; 
+	}   	
+		95% {
+		left: -2304px; opacity: 1; 
+	}   	
+		97% { 
+		left: -2304px; opacity: 0;
+	}   	
+		100% {
+		left: 0; opacity: 0; 
+	}
+} 
+ 
+	@-webkit-keyframes slider {     
+		0% {
+		left: 0; opacity: 0; 
+	}     
+		2% {
+		opacity: 1; 
+	}     
+		20% {
+		left: 0; opacity: 1; 
+	}     
+		21% {
+		opacity: 0; 
+	}     
+		24% {
+		opacity: 0; 
+	}     
+		25% {
+		left: -768px; opacity: 1; 
+	}       
+		45% {
+		left: -768px; opacity: 1; 
+	}     
+		46% {
+		opacity: 0; 
+	}     
+		48% {
+		opacity: 0; 
+	}     
+		50% {
+		left: -1536px; opacity: 1; 
+	}     
+		70% {
+		left: -1536px; opacity: 1; 
+	}     
+		72% {
+		opacity: 0; 
+	}     
+		74% {
+		opacity: 0; 
+	}    
+		75% {
+		left: -2304px; opacity: 1; 
+	}   	
+		95% {
+		left: -2304px; opacity: 1; 
+	}   	
+		97% { 
+		left: -2304px; opacity: 0;
+	}   	
+		100% {
+		left: 0; opacity: 0; 
+	}
+} 
+ 
+ 
+	@keyframes slider {     
+		0% {
+		left: 0; opacity: 0; 
+	}     
+		2% {
+		opacity: 1; 
+	}     
+		20% {
+		left: 0; opacity: 1; 
+	}     
+		21% {
+		opacity: 0; 
+	}     
+		24% {
+		opacity: 0; 
+	}     
+	25% {
+		left: -768px; opacity: 1; 
+	}     
+	45% {
+		left: -768px; opacity: 1; 
+	}     
+	46% {
+		opacity: 0; 
+	}     
+	48% {
+		opacity: 0; 
+	}     
+	50% {
+		left: -1536px; opacity: 1; 
+	}     
+	70% {
+		left: -1536px; opacity: 1; 
+	}     
+	72% {
+		opacity: 0; 
+	}     
+	74% {
+		opacity: 0; 
+	}    
+	75% {
+		left: -2304px; opacity: 1; 
+	}   	
+	95% {
+		left: -2304px; opacity: 1; 
+	}   	
+	97% { 
+		left: -2304px; opacity: 0; 
+	} 
+ 
+	100% {
+		left: 0; opacity: 0; 
+	}
+}
+	
+ </style>
+ </head>
+ <body>
+	
+	<div id="card">
+		<div id="card-content">
+			<div id="card-title">
+			<h2>LOGIN</h2>
+				<div class="underline-title"></div>
+			</div>
+		</div>
+		
+		<form method="post" class="form">
+			<label for="user-email" style="padding-top:13px">&nbsp;Email</label>
+				<input
+				id="user-email"
+				class="form-content"
+				type="email"
+				name="email"
+				autocomplete="on"
+				required />
+				<div class="form-border"></div>
+			<label for="user-password" style="padding-top:22px">&nbsp;Password</label>
+				<input
+				id="user-password"
+				class="form-content"
+				type="password"
+				name="password"
+				required />
+				<div class="form-border"></div>
+				<a href="#"><legend id="forgot-pass">Forgot password?</legend></a>
+				<input id="submit-btn" type="submit" name="submit" value="LOGIN" /><a href="#" id="signup">Don't have account yet?</a>
+		</form>
+	</div>
+	
+	<div class="container">
+		<div class="header">
+		<h1 class="text-gradient">Rainbow Tie Dye</h1>
+		<div class="malasngoding-slider">
+		<div class="isi-slider">
+			<img src="img/hoodie.jpg" alt="Gambar 1">
+			<img src="img/pants.jpg" alt="Gambar 2">
+			<img src="img/buckethat.jpg" alt="Gambar 3">
+			<img src="img/tshirt.jpg" alt="Gambar 4">
+		</div>
+	</div>
+	</div>
+	
+	<div class="content">
+		<div class="isi1"></div>
+		<div class="satu">
+			<br><br>
+			<a><center>Join Our Team</center></a>
+		</div>
+		<div class="dua">
+			<a><center>Be a Part of Rainbow Tie Dye Team and Let's Bridge the Distance</center></a>
+		</div>
+		<div class="two">
+			<a><center>@rainbow.co.id</center></a>
+		</div>
+		<div class="tiga">
+			<br><br>
+			<a>Business Development Manager</a>
+		</div>
+		<div class="empat">
+			<ul>
+              <li>Mengelola tim untuk mengembangkan dan menerapkan strategi untuk produk dan layanan baru</li>
+              <li>Mengidentifikasi peluang untuk mempromosikan, dan menyalurkan distribusi yang mengarah pada peningkatan penjualan</li>
+              <li>Berkoordinasi dan berinteraksi dengan divisi lain untuk memastikan pesanan dieksekusi dengan baik</li>
+              <li>Mengintegrasikan persyaratan kontrak dengan operasi bisnis</li>
+              <li>Mengembangkan dan menegosiasikan kontrak</li>
+            </ul>
+       </div>
+	   
+	</div>
+	
+	<div class="choice">
+		<dl>
+			<dt><a href="home.html">HOME</a></dt>
+			<hr width="230px" color="pink" align="left">
+			<dt><a href="contact.html">CONTACT</a></dt>
+			<hr width="230px" color="pink" align="left">
+			<dt><a href="product.html">PRODUCT</a></dt>
+			<hr width="230px" color="pink" align="left">
+		</dl>
+			<div class="categories">CATEGORIES</div>
+			<hr size="1" color="white" width="248px">
+			<div class="menu">
+		
+		<dl>
+			<dt><a href="hoodie.html">HOODIE</a><br>
+			<hr size="10" color="white" width="248px">
+			<dt><a href="pants.html">PANTS</a><br>
+			<hr size="10" color="white" width="248px">
+			<dt><a href="buckethat.html">BUCKET HAT</a><br>
+			<hr size="10" color="white" width="248px">
+			<dt><a href="tshirt.html">T-SHIRT</a><br>
+			<hr size="10" color="white" width="248px">
+			<dt><a href="socks.html">SOCKS</a><br>
+			<hr size="10" color="white" width="248px">
+		</dl>
+        <div class="last"><div class="last1"><font size="50"><b>Tie</b></font>Strore</div></div>
+    </div>
+	
+ </body>
+</html> 

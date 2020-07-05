@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+	body {
+		width: 1115px;
+		margin: 10px auto;
+		
+		background: -webkit-linear-gradient(bottom, #FFFFFF, #8485FF);
+	}
+	img {
+		width: 300px;
+		height: 320px;
+		border: 4px solid #575D63;
+		padding: 10px;
+		margin: 20px;
+	}
+	h1{
+		text-align: center;
+		/*ketebalan font*/
+		font: 55px masha;
+		color: white;
+	}
+	.text-gradient {
+			font-family: masha;
+			text-align: center;
+			font-size: 55px;
+			background: linear-gradient(to right, #ffffff 20%, #FF3C48 40%, #2373FF 80%, #ffffff 60%);
+			background-size: 200% auto;
+			color: #000;
+			background-clip: text;
+			text-fill-color: transparent;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			animation: animate 1s linear infinite;
+		}
+		@keyframes animate {
+			to {
+			background-position: 200% center;
+			}
+		}
+</style>
+</head>
+<body>
+	<h1 class="text-gradient">Socks</h1>
+	<img src="img/socks.jpg"><img src="img/socks1.jpg">
+	<img src="img/socks2.jpg"><img src="img/socks4.jpg">
+	<img src="img/socks5.jpg"><img src="img/socks6.jpg">
+</body>
+</html>
